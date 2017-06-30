@@ -4,7 +4,9 @@ Structureless and full control
 
 [see the example on jsFiddle](https://jsfiddle.net/eyphdz70/)
 ## How to use it!
-####setup: 
+#### setup: 
+
+
 Make a main input by an unique selector.
 Add min and max values like the example:
 ```
