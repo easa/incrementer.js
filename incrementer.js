@@ -9,8 +9,8 @@
             var value = $(this).val();
             var num;
             var $this;
-            var upS = opts.increaseSelector+ '[data-target="' + theSelector + '"]';
-            var downS = opts.decreaseSelector+ '[data-target="' + theSelector + '"]';
+            var upS = opts.increaserClass+ '[data-target="' + theSelector + '"]';
+            var downS = opts.decreaserClass+ '[data-target="' + theSelector + '"]';
             var maxValue = parseInt($elem.attr('max-value') ? $elem.attr('max-value') : undefined);
             var minValue = parseInt($elem.attr('min-value') ? $elem.attr('min-value') : undefined);
 
