@@ -65,18 +65,18 @@
 
             $(document.body).on('click', upS + ', ' + downS, function () {
                 $this = $(this);
-                if ($this.hasClass(opts.increaseSelector))
+                if ($this.hasClass(opts.increaserClass))
                     increase($this);
-                else if ($this.hasClass(opts.decreaseSelector))
+                else if ($this.hasClass(opts.decreaserClass))
                     decrease($this);
             });
             $(document.body).on('mousedown', upS + ', ' + downS, function () {
                 $this = $(this);
                 isDown = true;
                 timPer = opts.timePeriod;
-                if ($this.hasClass(opts.increaseSelector))
+                if ($this.hasClass(opts.increaserClass))
                     setimotId = setTimeout(function () { action(function () { increase($this) }) }, timPer);
-                else if ($this.hasClass(opts.decreaseSelector))
+                else if ($this.hasClass(opts.decreaserClass))
                     setimotId = setTimeout(function () { action(function () { decrease($this) }) }, timPer);
             });
             $(document.body).on('mouseleave mouseup', upS + ', ' + downS, function () {
@@ -95,7 +95,7 @@
         after: undefined,
         before: undefined,
         format: undefined,
-        decreaseSelector: '.decrement',
-        increaseSelector: '.increment'
+        decreaserClass: 'decrement',
+        increaserClass: 'increment'
     };
 })(jQuery)
