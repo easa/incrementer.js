@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title></title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+</head>
+
+<body style="background: black">
+    <div style="width: 160px">
+<div class="time-picker">
+    <table class="table">
+        <tbody>
+            <tr class="text-center">
+                <td><a class="btn btn-link increment" data-target=".number-min"><span class="glyphicon glyphicon-chevron-up"></span></a></td>
+                <td>&nbsp;</td>
+                <td><a class="btn btn-link increment" data-target=".number-hour"><span class="glyphicon glyphicon-chevron-up"></span></a></td>
+            </tr>
+            <tr>
+                <td class="form-group">
+                    <input class="form-control number-min" value="98" min-value="98" max-value="102" />
+                </td>
+                <td class="form-group">:</td>
+                <td class="form-group">
+                    <input class="form-control number-hour" value="08" min-value="2" max-value="24" />
+                </td>
+            </tr>
+            <tr class="text-center">
+                <td><a class="btn btn-link decrement" data-target=".number-min"><span class="glyphicon glyphicon-chevron-down"></span></a></td>
+                <td>&nbsp;</td>
+                <td><a class="btn btn-link decrement" data-target=".number-hour"><span class="glyphicon glyphicon-chevron-down"></span></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+<script src="incrementer.js"></script>
+<script>
+    $(function () {
+        $(".number-hour").incremental();
+        $(".number-min").incremental({
+            length: 3
+        });
+    });
+</script>
+</body>
+
+</html>
