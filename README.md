@@ -1,6 +1,8 @@
 # incrementer.js
 A jQuery plugin to manage input's value, specially numbers!
 Structureless and full control
+
+[see the example on jsFiddle](https://jsfiddle.net/eyphdz70/)
 ## How to use it!
 ####setup: 
 Make a main input by an unique selector.
