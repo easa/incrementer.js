@@ -33,8 +33,8 @@ speed: 50,          // the high speed at holding
 divideSpeed: 2,     // every setTimeout the time value divide 
 timePeriod: 750,    // the first delay time
 length: 2,          // append 0 before number depends on lenght of number
-decreaseSelector: '.decrement',
-increaseSelector: '.increment',
+decreaserClass: 'decrement',
+increaserClass: 'increment',  // for now these two just work with classes!
 ```
 There are more options for other type of input that i wanna add later..
 
